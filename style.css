@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins", sans-serif;
+}
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.carousel-caption {
+  width: 671px;
+  bottom: 200px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 70px;
+}
+.carousel-caption p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* Responsiveness */
+
+@media only screen and (max-width: 767px) {
+  .carousel-item {
+    height: 262px;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-caption {
+    width: 73%;
+    bottom: 20px;
+  }
+  .carousel-caption h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .carousel-caption p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .carousel-item {
+    height: 400px;
+  }
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-caption {
+    width: 74%;
+    bottom: 80px;
+  }
+  .carousel-caption h5 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .carousel-caption p {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
